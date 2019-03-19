@@ -1,0 +1,351 @@
+body {
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  padding-top: 15%;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.wrapper-modal {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0 20px 0 20px;
+  border: 1px solid #888;
+  width: 320px;
+}
+
+.modal-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 18px;
+  border-bottom: 1.5px solid rgba(235, 235, 235, 0.667);
+}
+
+.close,
+.btn-close-rename-wind {
+  color: #aaaa;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.close:hover,
+.btn-close-rename-wind:hover {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group .name-item,
+.input-group .type-item,
+.input-group .rename-item {
+  height: 25px;
+  padding-left: 5px;
+  width: 75%;
+  border: 1px solid #c5c5c5;
+}
+
+.input-group .type-item {
+  width: 25%;
+  background-color: #e9e9e9;
+}
+
+.input-group .rename-item {
+  width: 100%;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 1.5px solid rgba(235, 235, 235, 0.667);
+}
+
+.modal-footer button {
+  height: 25px;
+  margin: 10px 0px 16px 10px;
+}
+
+section.wrapper-file-manager {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(223, 223, 223);
+}
+
+.breadcrumb,
+.top-panel {
+  padding-left: .5%;
+  height: 5%;
+}
+
+.top-panel p {
+  margin: 0;
+  padding-top: 7px;
+}
+
+.file-manager {
+  height: 90%;
+}
+
+.dirctories,
+.directory-date {
+  float: left;
+  margin-left: .5%;
+  width: 20%;
+  height: 100%;
+  background-color: #fff;
+  border: 1px solid rgb(146, 146, 146);
+}
+
+.dirctories .block-list-items {
+  margin: auto;
+  width: 85%;
+  height: 100%;
+}
+
+.dirctories .main-directory {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin: 0;
+}
+
+.dirctories .main-directory span img,
+.dirctories .list-directories span img {
+  height: 8px;
+  width: 7px;
+}
+
+.dirctories .block-list-items ul {
+  display: none;
+  margin: 0;
+  padding-left: 15px;
+  list-style: none;
+  color: black;
+}
+
+.show-list-directories {
+  display: block !important;
+}
+
+.dirctories .block-list-items ul li {
+  padding-bottom: 7px;
+}
+
+.dirctories .block-list-items ul li a,
+.dirctories .main-directory a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.dirctories .block-list-items .list-directories li a img,
+.dirctories .main-directory a img {
+  height: 14px;
+  padding-right: 4px;
+  padding-left: 3px;
+}
+
+.directory-date {
+  margin-right: .5%;
+  width: 78%;
+}
+
+.toolbar {
+  display: flex;
+  height: 40px;
+  background-color: rgb(223, 223, 223);
+  border-bottom: 1px solid rgb(146, 146, 146);
+}
+
+.toolbar .add-dir-and-file,
+.toolbar .manager-search {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  height: 100%;
+}
+
+.toolbar .add-dir-and-file button {
+  height: 70%;
+  margin: 0 3px 0 3px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toolbar .add-dir-and-file button img {
+  height: 22px;
+}
+
+.toolbar .add-dir-and-file button img:hover {
+  box-shadow: 0 5px 3px -2px gray;
+}
+
+.toolbar .add-dir-and-file .btn-tools {
+  border-left: 1px solid #a7a7a7;
+}
+
+.toolbar .add-dir-and-file .btn-tools button img {
+  height: 16px;
+}
+
+.toolbar .manager-filters {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.toolbar .manager-filters .checkbox-show-folders,
+.toolbar .manager-filters .filter-pick-date {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+.checkbox-show-folders p {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.filter-pick-date input {
+  height: 22px;
+  margin-right: 5px;
+  color: rgb(136, 136, 136);
+}
+
+.filter-pick-date button {
+  height: 26px;
+}
+
+.toolbar .manager-search {
+  justify-content: center;
+  width: 30%;
+}
+
+.toolbar .manager-search input {
+  height: 20px;
+}
+
+.toolbar .manager-search button {
+  height: 26px;
+  margin-left: 5px;
+}
+
+.breadcrumb p {
+  margin: 0;
+  padding-top: 5px;
+}
+
+.directory-date .table-header table,
+.directory-date .table-content table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+.directory-date .table-header table tr td {
+  background: linear-gradient(to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 31%,
+    rgba(255, 255, 255, 1) 39%,
+    rgba(242, 242, 242, 1) 54%,
+    rgba(237, 237, 237, 1) 100%);
+  height: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.tr-reflection {
+  display: none;
+}
+
+.directory-date .table-header table tr td:first-child {
+  padding-left: 35px;
+}
+
+.directory-date .table-content table tr td {
+  height: 25px;
+  padding-left: 5px;
+  cursor: pointer;
+}
+
+.directory-date .table-content table tr td:first-child {
+  padding-left: 7px;
+  width: 3%;
+}
+
+.directory-date .table-content table tr td:nth-child(2) {
+  width: 37%;
+}
+
+.directory-date .table-content table tr td:nth-child(3) {
+  width: 25%;
+}
+
+.directory-date .table-content table tr td:nth-child(4) {
+  width: 20%;
+}
+
+.directory-date .table-content table tr td:last-child {
+  width: 15%;
+}
+
+.directory-date .table-content table tr td input {
+  pointer-events: none;
+}
+
+.directory-date .table-content table tr img {
+  height: 16px;
+  width: 16px;
+  padding-right: 5px;
+}
+
+.directory-date .table-content table tr:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.bg-selected-tr {
+  background-color: #d2d2d2;
+}
+
+.notification {
+  display: none;
+  background-color: rgb(243, 243, 243);
+  height: 100vh;
+  width: 100%;
+}
+
+.notification .block-message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.block-message .text-for-user {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper-file-manager {
+    display: none;
+  }
+
+  .notification {
+    display: block;
+  }
+}
